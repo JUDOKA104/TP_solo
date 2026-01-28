@@ -30,4 +30,17 @@ class Animal {
         $this->estMalade = true;
         return "{$this->nom} est tombé malade...";
     }
+
+    /**
+     * Modifie l'état de santé en appelant la méthode appropriée.
+     * @param bool $etat (true = malade, false = soigné)
+     * @return string Le message retourné par la méthode appelée.
+     */
+    public function setEstMalade(bool $etat): string {
+        if ($etat === true) {
+            return $this->tomberMalade();
+        } else {
+            return $this->seSoigner();
+        }
+    }
 }

@@ -29,5 +29,5 @@ echo "<h3>2. Visite Guidée</h3>";
 echo $monEnclos->visiteGuidée();
 
 echo "<h3>3. Événements</h3>";
-echo $lionSimba->tomberMalade() . "<br>";
-echo $lionSimba->seSoigner() . "<br>";
+echo $lionSimba->setEstMalade(true) . "<br>";
+echo $lionSimba->setEstMalade(false) . "<br>";
